@@ -10,11 +10,6 @@
 
 setInterval( function() {
     var time = getSecondsSinceStartOfDay();
-    console.log(time);
-    console.log(new Date().getSeconds());
-    console.log(new Date().getMinutes());
-    console.log(new Date().getHours()-12);
-    console.log(new Date());
     var seconds = new Date().getSeconds();
     secondHand.style.transform = `rotate(${(seconds * 6)-180}deg)`;
     var minutes = new Date().getMinutes();
